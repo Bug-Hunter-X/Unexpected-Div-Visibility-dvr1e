@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+<style>
+  #myDiv {
+    display: none; /* Correctly set initial display to none */
+  }
+</style>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be hidden initially.
+  </div>
+  <button onclick="showDiv()">Show Div</button>
+
+  <script>
+    function showDiv() {
+      document.getElementById("myDiv").style.display = "block";
+    }
+  </script>
+</body>
+</html>
